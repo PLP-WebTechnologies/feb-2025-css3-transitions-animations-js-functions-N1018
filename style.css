@@ -1,0 +1,26 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeEffect 1s ease-in-out forwards;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
